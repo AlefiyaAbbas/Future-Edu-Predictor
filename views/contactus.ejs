@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future-edu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/v4-shims.min.css">
+    <link rel="icon" href="images/tabicon.png" type="image/x-icon">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript">
+        function sendEmail() {
+            let subject = document.getElementById("visitor_subject").value;
+            let name = document.getElementById("visitor_name").value;
+            let message = document.getElementById("visitor_message").value;
+            let visitor_email = document.getElementById("visitor_email").value;
+            console.log(name);
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "contact.futureedu@gmail.com",
+                Password: "future-edu",
+                To: "alefiyar02@gmail.com",
+                From: "contact.futureedu@gmail.com",
+                Subject: `Subject: ${subject}`,
+                Body:
+                    `User name: ${name}. \n` +
+                    `User email: ${visitor_email}. \n` +
+                    `User message: ${message}. \n`,
+            }).then(function (message) {
+                alert("Mail sent successfully");
+            });
+            console.log("Hello2");
+        }
+    </script>
+</head>
+
+<body>
+    <section class="sub-header">
+        <%- include('partials/nav.ejs') %>
+            <h1>Contact us</h1>
+
+    </section>
+
+
+    <!-- ---------contact---------- -->
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <h5><i class="fab fa-yahoo"></i></h5>
+                    <p>
+                        contact.futureedu@yahoo.com
+                    </p>
+                </div>
+                <div>
+                    <h5><i class="fab fa-google-plus"></i></h5>
+                    <p>
+                        contact.futureedu@gmail.com
+                    </p>
+                </div>
+
+            </div>
+            <div class="contact-col">
+                <form id="submit_form">
+                    <input type="text" name="name" id="visitor_name" placeholder="Enter your name" required />
+                    <input type="email" id="visitor_email" name="email" placeholder="Enter your email adress"
+                        required />
+                    <input type="text" id="visitor_subject" name="subject" placeholder="Enter your subject" required />
+                    <textarea rows="8" id="visitor_message" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn" onclick="sendEmail()">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- ---------Footer---------- -->
+
+
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="images/logo.png" class="footer-logo">
+                    <p>Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Laborum atque, sint explicabo rerum excepturi, nemo
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Branches</h4>
+                    <p>Computer Engineering</p>
+                    <p>Information Technology</p>
+                    <p>Electronics And Telecommunication</p>
+                    <p>Data Science</p>
+                    <p>Electronics </p>
+                    <p>Data Science</p>
+                    <p>Artificial-intelligence</p>
+                    <p>Civil Engineering</p>
+                    <p>Chemical Engineering</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Other</h4>
+                    <p>SignUp/Login</p>
+                    <p>Predictor</p>
+                    <p>About Us</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Contact Us</h4>
+                    <p><i class="fab fa-yahoo"></i> +2 74234524</p>
+                    <p><i class="fab fa-google-plus"></i> contact.futureedu@gmail.com</p>
+                </div>
+
+            </div>
+            <hr>
+            <p class="copyright">Made by Group 13</p>
+        </div>
+
+    </section>
+
+
+
+
+</body>
+
+</html>a
