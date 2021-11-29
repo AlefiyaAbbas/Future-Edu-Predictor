@@ -86,9 +86,9 @@ app.get("/predictor", (req, res) => {
 app.post("/result", async (req, res) => {
     try {
         console.log(req.body);
-        let [result,_] = await predictor.findAllColleges();
+        let [result, _] = await predictor.findAllColleges();
         console.log(result);
-       // res.status(200).json(result);
+        // res.status(200).json(result);
         res.status(200).render("result", { count: result.length, result });
     } catch (error) {
         console.log(error);
