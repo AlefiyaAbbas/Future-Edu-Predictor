@@ -101,6 +101,15 @@ nav img{
     padding-bottom: 100px;
        
 }
+.course a{
+   color: #000;
+    font-size: 18px;
+    
+    line-height: 30px;
+    
+    padding: 10px;
+    text-decoration: none;
+}
 h1{
     font-size: 36px;
     font-weight: 600;
@@ -145,7 +154,7 @@ p{
     transition: 1s;
 }
 
-/* /-------- Predictor-----/ */
+/* /-------- Predictor home-----/ */
 
 .pred{
    margin-top:200px ;
@@ -159,14 +168,17 @@ p{
     font-weight: 800;
     font-size: 40px;
     color: white;
+    padding-top: 100px;
 }
 .col-p{
-    padding: 50px;
+    
     padding-left: 100px;
     
+    
 }
+
 .col-p img{
-    max-width: 100%;
+    max-width: 90%;
     padding-left: 30px;
 }
  .col-p h3{
@@ -187,16 +199,20 @@ p{
     align-items: center;
     justify-content: center;
     /* display: flex; */
-    padding-top: 100px;
     padding: 100px;
+    background-color: #03989E;
   
  
 } 
+.steps h1{
+    font-weight: 800;
+    font-size: 40px;
+    color: white;
+}
 h1{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
     font-size: 36px;
     font-weight: 600;
     padding-bottom: 50px;
@@ -223,7 +239,7 @@ h1{
   margin-right: auto;
   padding: 20px 15px;
     background: #fff;
-     background: #012C6D;
+     background:#FAAE42 ;
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -232,8 +248,8 @@ h1{
 }
 .workcard:hover{
     height: 250px;  
-    border: 1px solid #FAAE42;
-    background:  #FAAE42 ;
+    border: 1px solid #ffffff;
+    background:   #ffffff ;
   
 }
 
@@ -273,8 +289,8 @@ h1{
  
 }
 .workcard_container p{
-     font-size: 14px;
-  font-weight: 500px;
+     font-size: 20px;
+  font-weight: 100px;
   color: #012C6D;
 }
 .content h2{
@@ -331,6 +347,23 @@ h1{
 .col-md-3{
     cursor: pointer;
 }
+.footer .col-md-3 ul li :hover{
+    color: #FAAE42;
+   transition-delay: 0.1s;
+}
+.col-md-3 ul li{
+    list-style: none;
+ 
+    position: relative;
+    
+}
+.col-md-3 ul li a{
+    color: #012C6D;
+    background: rgba(255, 255, 255, 0.3);
+    
+    text-decoration: none;
+    font-size: 18px;
+}
 
 .col img {
     display: block;
@@ -367,7 +400,7 @@ h1{
     height: 50vh;
     width: 100%;
     background-image: linear-gradient(rgba(245, 246, 252, 0.52), #041546b7),
-    url(../images/header.png);
+    url(../images/ian-schneider-TamMbr4okv4-unsplash.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -407,6 +440,10 @@ h1{
 
 .red-btn:hover{
     color: #ffffff;
+}
+.grp{
+    
+    font-weight:bold;
 }
 
 
@@ -741,7 +778,7 @@ form{
 }
 .number{
     position: relative;
-    left: 120px;
+    left: 200px;
     top:-37px;
     line-height: 40px;
     width: 200px;
@@ -750,20 +787,13 @@ form{
     font-size: 16px;
     color: #555;
 }
-.area-code{
-    position: relative;
-    color: #e5e5e5;
-    text-transform: capitalize;
-    font-size: 14px;
-    left: 100px;
-    
-}
+
 .phone-number{
     position: relative;
     color: #e5e5e5;
     text-transform: capitalize;
     font-size: 14px;
-    left: -120px;
+    left: -50px;
     
 }
 .option{
@@ -863,16 +893,120 @@ form{
     color: #555;
 }
 
-
-
-
 .predict{
    margin: 30px;
    align-items: center;
 }
 
+
+/* ---------------------result-------------------- */
+.predictor-res{
+   
+    background-image:
+    linear-gradient(rgba(245, 246, 252, 0.52), #041546b7),
+    url(../images/image.jpg);
+    width: 100%;
+    height: 110vh;
+    background-size: cover;
+    background-position: center;
+       
+}
+
+.predictor-res h1{
+    width: 1300px;
+    background-image:linear-gradient(rgba(1, 44, 109, 0.89),rgba(1, 44, 109, 0.473));
+    margin-top:10px;
+    color: #fff;
+    padding: 10px 0px 10px 0px;
+    border-radius: 60px 60px 0px 0px;
+    text-align: center;
+}
+.predictor-res h2{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0px 0px 0px;
+    letter-spacing: 2px;
+}
+
+.predictor-res .main{
+    background-image:linear-gradient(rgba(1, 44, 109, 0.89),rgba(1, 44, 109, 0.473));
+    border-radius: 0 0 60px 60px;
+    
+    width: 1300px;
+    margin: auto;
+}
+.col-r{
+    display: flex;
+}
+.main img{
+    width: 23%;
+    
+   position:relative;
+   -webkit-animation:glide 1s ease-in-out alternate infinite;
+}
+@-webkit-keyframes glide  {
+    from {
+       left:0px;
+       top:0px;
+    }
+    
+    to {
+       left:0px;
+       top:30px;
+    }
+ 
+ }
+
+form{
+    padding: 10px;
+}
+.predictor-res .result
+{
+    display: flex;
+    
+    
+}
+.predictor-res h3
+{
+    font-size: 24px;
+    color: #FAAE42;
+    text-shadow: 2px 2px 30px #ffffff;
+    min-width: 200px;
+}
+.predictor-res h5{
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    min-height: 250px;
+}
+
+.colleges{
+    
+    padding: 50px; 
+}
+.predictor-res .result h4
+{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    padding-bottom: 2;  
+    min-height: 250px;
+    
+}
+
+.predictor-res .result p
+{
+    
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    padding-left: 200px;
+}
+
+/* ---------------------loading------------------- */
 .loading{
-    margin: 45px;
+    margin: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -903,4 +1037,49 @@ form{
         opacity: 0;
         transform: scale(0.7) translateY(10px);
     }
+}
+
+
+/* <----------404page---------> */
+
+
+.notfound{
+    
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(245, 246, 252, 0.52), #041546b7);
+   display: flex;
+    align-items: center;
+  
+    justify-content: center;
+}  
+.notfoundwapper{
+     text-align: center;
+    
+}
+.notfoundwapper h2{
+ margin: 40px 0;
+ font-size: 2.5rem;
+}
+.notfoundwapper img{
+    width: 600px;
+    max-width: 80%;
+}
+.notfoundwapper h4{
+    margin: 40px 0 20px;
+    font-size: 1.2rem;
+}
+.a{
+    padding: 15px;
+    background-color: #012C6D;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.notfoundwapper .a:hover {
+    background: #FAAE42;
 }

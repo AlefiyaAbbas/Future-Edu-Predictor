@@ -24,9 +24,11 @@
                 <div class="inner-box" id="card">
                     <div class="card-front">
                         <h2>LOGIN</h2>
-                        <form>
-                            <input type="email" class="input-box" placeholder="Your Email Id" required>
-                            <input type="password" class="input-box" placeholder="Password" required>
+                        <form method="POST" action="/">
+                            <input type="email" class="input-box" placeholder="Your Email Id" name="emailID"
+                                id="emailID" required>
+                            <input type="password" class="input-box" placeholder="Password" name="passwordCheck"
+                                id="passwordCheck" required>
                             <button type="submit" class="submit-btn_login">Submit</button>
                             <input type="checkbox"><span>Remember Me</span>
                         </form>
@@ -36,9 +38,11 @@
                     <div class="card-back">
                         <h2>REGISTER</h2>
                         <form>
-                            <input type="text" class="input-box" placeholder="Your Name" required>
-                            <input type="email" class="input-box" placeholder="Your Email Id" required>
-                            <input type="password" class="input-box" placeholder="Password" required>
+                            <input type="text" class="input-box" placeholder="Your Name" name="Name" id="Name" required>
+                            <input type="email" class="input-box" placeholder="Your Email Id" name="email" id="email"
+                                required>
+                            <input type="password" class="input-box" placeholder="Password" name="password"
+                                id="password" required>
                             <button type="submit" class="submit-btn_login">Submit</button>
                             <input type="checkbox"><span>Remember Me</span>
                         </form>

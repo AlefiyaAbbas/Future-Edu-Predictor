@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Future-edu|Predictor</title>
+    <title>Future-edu|Result</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,25 +17,71 @@
 </head>
 
 <body>
-
-    <div class="predictor">
-        <h1>Predictor</h1>
+    <div class="predictor-res">
+        <h1>Result</h1>
         <div class="main">
             <form>
-                <h2 class="title">Colleges you can try: </h2>
-                <div class="result">
-                    <% if (count> 0) {%> <% result.forEach(college=> {%>
-                            <br>
-                            <%=college.college_name %>
-                                <%=college.lowest %> <br>
-                                    <% }); %>
-                                        <% } %>
+                <h2>Best Choices for You </h2>
 
+                <div class="col-r">
+
+                    <div class="colleges">
+                        <h3>Colleges</h3>
+                        <br>
+                        <div class="result">
+                            <h5>
+                                <% if (count> 0) {%> <% result.forEach(college=> {%>
+                                        <br>
+                                        <%=college.college_name %>
+                                            <br>
+                                            <% }); %>
+                                                <% } %>
+                            </h5>
+
+                        </div>
+
+
+                    </div>
+                    <div class="colleges">
+
+                        <h3>CutOff</h3>
+                        <br>
+                        <div class="result">
+                            <h4>
+                                <% if (count> 0) {%> <% result.forEach(college=> {%>
+                                        <br>
+                                        <%=college.lowest %>
+                                            <br>
+                                            <% }); %>
+                                                <% } %>
+                            </h4>
+                        </div>
+
+
+                    </div>
+                    <div class="colleges">
+
+                        <h3>Minority CutOff</h3>
+                        <br>
+                        <div class="result">
+                            <h4>
+                                <% if (count> 0) {%> <% result.forEach(college=> {%>
+                                        <br>
+                                        <%=college.lin_cutoff %>
+                                            <br>
+                                            <% }); %>
+                                                <% } %>
+                            </h4>
+                        </div>
+
+
+                    </div>
+                    <img src="images/results.png">
                 </div>
+
             </form>
         </div>
     </div>
-
 
 </body>
 
